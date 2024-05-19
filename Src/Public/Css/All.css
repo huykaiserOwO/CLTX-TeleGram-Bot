@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    word-wrap: normal;
+}
+
+body {
+    width: 100%;
+    background-color: #2a2a2e;
+}
+
+
+#sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #28282d;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 1px 1px 10px 1px #00000031;
+    transition: all 1s;
+    z-index: 2;
+}
+
+
+#sidebar a {
+    display: block;
+    color: whitesmoke;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    transition-property: color, background-color, border-color, box-shadow, opacity;
+    font-size: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#sidebar a p {
+    line-height: 18px;
+}
+
+#sidebar a.active {
+    color: rgb(239, 75, 75);
+    font-weight: 600;
+}
+
+#sidebar a:hover:not(.active, .Logo, .User) {
+    color: #fef142;
+}
+
+
+#sidebar .User {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #383834a3;
+}
+
+#sidebar .User span p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+    color: #fef142;
+}
+
+.Logo {
+    border-bottom: 1px solid #fef9a6;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #fef9a6;
+    opacity: 0;
+    display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+    opacity: 0;
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    margin-left: 270px;
+    height: auto;
+    padding: 20px 30px;
+}
+
+.row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    background-color: #28282d;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.row h1 {
+    font-size: 100%;
+    color: whitesmoke;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    color: #fef142;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 0;
+    background-image: linear-gradient(90deg, #fe5b09 0%, #fef9a6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+marquee {
+    color: whitesmoke;
+    margin-top: 5px;
+}
+
+.navbar {
+    background-color: #28282d;
+}
+
+.container {
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.Header {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+.headerBox {
+    padding: 0 0 0 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+}
+
+.HeaderFixed {
+    position: fixed;
+    width: 250px;
+}
+
+.ListGame {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ListGame .btn-light {
+    font-size: 100%;
+    color: red;
+    font-weight: 550;
+}
+
+.bodyBox {
+    padding-top: 20px;
+}
+
+.bodyBox h2 {
+    font-size: 80%;
+    color: whitesmoke;
+}
+
+.bodyBox h2 b {
+    font-weight: 600;
+    color: #fef142;
+}
+
+.table {
+    color: whitesmoke;
+    word-wrap: normal;
+    font-size: 80%;
+    text-align: center;
+    table-layout: auto;
+    word-wrap: normal;
+}
+
+.DiemGame {
+    padding: 0 10px;
+    margin: 0;
+    font-size: 70%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+button {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.NhiemVuNgayTable {
+    width: 800px;
+    margin: auto;
+}
+
+.lnk__btn {
+    border-radius: 8px;
+    background: linear-gradient(90deg, #fe5b09 0%, #fef9a6 100%);
+    box-shadow: 0 0 16px 0 rgb(254 155 33 / 30%);
+    position: relative;
+    color: #000;
+    padding: 5px 15px;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+    #sidebar {
+        margin-left: -300px;
+        margin-top: -75px;
+        height: 100%;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .Header {
+        display: block;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .NhiemVuNgayTable {
+        max-width: 100%;
+    }
+}

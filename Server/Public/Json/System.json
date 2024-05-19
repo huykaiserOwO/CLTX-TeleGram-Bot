@@ -1,0 +1,32 @@
+[
+    {
+        "Settings": "Image\/Logo",
+        "Id": 1,
+        "Url": "https:\/\/127.0.0.1\/TeleBotV3\/Src\/Public\/Upload\/logo.gif"
+    },
+    {
+        "Settings": "TenGame",
+        "Id": 2,
+        "Name": "LIXI66"
+    },
+    {
+        "Settings": "LinkBotTele",
+        "Id": 3,
+        "Url": "https:\/\/t.me\/Lixi66_bot"
+    },
+    {
+        "Settings": "BaoTriHeThong",
+        "Id": 4,
+        "On_Off": "Off"
+    },
+    {
+        "Settings": "CapNhapThongKe",
+        "Id": 5,
+        "On_Off": "Off"
+    },
+    {
+        "Settings": "ThongBao",
+        "Id": 6,
+        "Msg": "Th\u00f4ng b\u00e1o admin"
+    }
+]

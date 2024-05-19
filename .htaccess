@@ -1,0 +1,67 @@
+# code by SCD
+<Files ".htaccess">
+  Require all denied
+</Files>
+
+# AllowOverride .htaccess
+RewriteEngine On
+
+# Error 404 Page
+ErrorDocument 404 /TeleBotV3/404.php 
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# Css
+RewriteRule ^All$ /TeleBotV3/Src/Public/Css/All.css [L]
+# Login Css
+RewriteRule ^LoginCss$ /TeleBotV3/Src/Public/Css/Login.css [L]
+
+# Js
+RewriteRule ^AllJs$ /TeleBotV3/Src/Public/Js/All.js [L]
+
+# Js admin
+RewriteRule ^AdminJs$ /TeleBotV3/Src/Admin/Js/Admin.js [L]
+
+# Ajax 
+RewriteRule ^Ajax/GetGameTele$ /TeleBotV3/Src/Ajax/GetListGameTele.php [L]
+RewriteRule ^Ajax/GetGameZlMmBk$ /TeleBotV3/Src/Ajax/GetListGameZlMmBk.php [L]
+
+# Liên kết tele
+RewriteRule ^LienKetTele$ /TeleBotV3/Src/View/LienKetTele.php [L]
+
+# Cài đặt bank ajax 
+RewriteRule ^CaiDatBank$ /TeleBotV3/Src/Ajax/CaiDatBank.php [L]
+
+# Cài đặt tài khoản ajax 
+RewriteRule ^CaiDatTaiKhoan$ /TeleBotV3/Src/Ajax/CaiDatTaiKhoan.php [L]
+
+# GiftCode ajax 
+RewriteRule ^GiftCode$ /TeleBotV3/Src/Ajax/GiftCode.php [L]
+
+# Xử lý chat ajax
+RewriteRule ^ChatHandler$  /TeleBotV3/Src/Ajax/ChatHandler.php [L]
+
+# Admin
+RewriteRule ^Admin$ /TeleBotV3/Src/Admin/Index.php [L]
+
+# Game Zalopay 
+RewriteRule ^Cron/GameZalopay$ /TeleBotV3/Src/GameZaloPay/Game.php [L]
+# ?OauthToken=LIXI66TOP
+
+# Game Momo 
+RewriteRule ^Cron/GameMomo$ /TeleBotV3/Src/GameMomo/Game.php [L]
+# ?OauthToken=LIXI66TOP
+
+# Cron 
+RewriteRule ^Cron/NapTienMomo$ /TeleBotV3/Src/Cron/NapTienMomo.php [L]
+# ?OauthToken=LIXI66TOP
+
+RewriteRule ^Cron/SoDuMomo$ /TeleBotV3/Src/Cron/SoDuMomo.php [L]
+# ?OauthToken=LIXI66TOP
+
+RewriteRule ^Cron/NapTienZalopay$ /TeleBotV3/Src/Cron/NapTienZalopay.php [L]
+# ?OauthToken=LIXI66TOP
+
+RewriteRule ^Cron/NapTienBanking$ /TeleBotV3/Src/Cron/NapTienBanking.php [L]
+# ?OauthToken=LIXI66TOP

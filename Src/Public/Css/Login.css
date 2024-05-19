@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.loginBox {
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.loginBox div {
+    margin-bottom: 50px;
+}
+
+#basic-addon1 {
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: #2b2b31;
+}
+
+.input-group input,
+.mb-3 input {
+    background-color: #2b2b31;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.input-group input:focus,
+.mb-3 input:focus {
+    background-color: #2b2b31;
+    color: whitesmoke;
+}
+
+.sign__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #fef9a6 0%, #fe5b09 100%);
+    box-shadow: 0 0 16px 0 rgb(254 155 33 / 30%);
+    position: relative;
+    color: #333;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transition: 0.5s ease;
+    transition-property: color, background-color, border-color, box-shadow, opacity;
+    cursor: pointer;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border-radius: 0;
+}
+
+.sign__text {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #c7c7c7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1200px) {
+    .loginBox {
+        width: 100%;
+    }
+}
